@@ -1,7 +1,2 @@
-/.idea/.gitignore
-/.idea/discord.xml
-/.idea/infinitycode.iml
-/.idea/jsLibraryMappings.xml
-/.idea/modules.xml
-/.idea/vcs.xml
+.idea
 config.json
