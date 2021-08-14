@@ -1,5 +1,7 @@
 const DiscordJS = require('discord.js')
 const WOKCommands = require('wokcommands')
+require('dotenv').config()
+
 
 const client = new DiscordJS.Client({
     partials: ['MESSAGE', 'REACTION']
@@ -35,4 +37,4 @@ client.on('ready', () => {
     console.log('Der Bot wurde gestartet.')
 })
 
-client.login("ODMyMzIxNjQ3ODcxNjU1OTQ2.YHiF8A.yCC3mEHoelnIPiNAhUc7M4zL3PQ")
+client.login(process.env.TOKEN)
