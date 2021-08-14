@@ -2,7 +2,11 @@
 
 Infinity Code ist ein Coding Server wo du Hilfe in jeden Coding Bereich bekommst.
 
-## Wie komme ich auf InfinityCode?
+## Wie komme ich auf Infinity Code?
+
+Du kommst auf InfinityCode in dem du [hier](https://discord.gg/sUE2EmDPuw) klickst.
+
+### License
 
 ISC License
 

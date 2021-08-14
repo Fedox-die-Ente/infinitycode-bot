@@ -36,7 +36,7 @@ client.on('ready', () => {
 
         .setDefaultPrefix('$')
         .setColor(0xff0000)
-        .setMongoPath('mongodb+srv://admin:florian2605@cluster0.kdkwn.mongodb.net/infinitycode?retryWrites=true&w=majority')
+        .setMongoPath(`${process.env.MONGOPATH}`)
         .setBotOwner('775741196206473226')
     console.log('Der Bot wurde gestartet.')
 })
