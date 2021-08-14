@@ -1,0 +1,160 @@
+{
+  "LANGUAGE_NOT_SUPPORTED": {
+    "english": "This bot does not have support for {LANGUAGE} at this time.",
+    "german": "Der Bot unterstützt {LANGUAGE} zurzeit nicht."
+  },
+  "CURRENT_LANGUAGE": {
+    "english": "The current language is set to {LANGUAGE}.",
+    "german": "Die Sprache ist aktuell auf {LANGUAGE} gesetzt."
+  },
+  "NEW_LANGUAGE": {
+    "english": "Language set to {LANGUAGE}.",
+    "german": "Die Sprache {LANGUAGE} wurde ausgewählt."
+  },
+  "BOT_OWNERS_ONLY": {
+    "english": "Only the bot owner can run this command.",
+    "german": "Nur der Besitzer des Bots kann diesen Befehl ausführen"
+  },
+  "TEST_ONLY": {
+    "english": "Only on the testserver you run this command.",
+    "german": "Der Befehl kann nur auf den Testserver ausgeführt werden."
+  },
+  "DISABLED_COMMAND": {
+    "english": "That command is currently disabled in this server.",
+    "german": "Dieser Befehl ist auf dem Server zurzeit deaktiviert."
+  },
+  "MISSING_PERMISSION": {
+    "english": "You must have the {PERM} permission in order to use this command.",
+    "german": "Du benötigst die Berechtigung {PERM}, um diesen Befehl nutzen zu können."
+  },
+  "MISSING_ROLES": {
+    "english": "You do not have the required roles to use this command! You need one of the following: {ROLES}",
+    "german": "Sie haben nicht die erforderlichen Rollen, um diesen Befehl zu verwenden! Sie benötigen eine der folgenden Möglichkeiten: {ROLES}"
+  },
+  "COOLDOWN": {
+    "english": "You must wait {COOLDOWN} before using that command again.",
+    "german": "Du musst {COOLDOWN} warten, bevor du diesen Befehl erneut nutzen kannst."
+  },
+  "ENABLE_DISABLE_STATE": {
+    "english": "The state must be either \"enable\" or \"disable\".",
+    "german": "Der Zustand muss entweder \"aktiviere\" oder \"deaktiviere\" sein."
+  },
+  "CANNOT_ENABLE_DISABLE_IN_DMS": {
+    "english": "You cannot enable or disable commands in private messages.",
+    "german": "Du kannst keine Befehle in Privatnachrichten aktivieren oder deaktivieren."
+  },
+  "COMMAND_ALREADY_ENABLED": {
+    "english": "That command is already enabled!",
+    "german": "Dieser Befehl ist bereits aktiviert!"
+  },
+  "COMMAND_ALREADY_DISABLED": {
+    "english": "That command is already disabled!",
+    "german": "Dieser Befehl ist bereits deaktiviert!"
+  },
+  "COMMAND_NOW_ENABLED": {
+    "english": "{COMMAND} is now enabled!",
+    "german": "{COMMAND} wurde aktiviert!"
+  },
+  "COMMAND_NOW_DISABLED": {
+    "english": "{COMMAND} is now disabled!",
+    "german": "{COMMAND} wurde deaktiviert!"
+  },
+  "UNKNOWN_COMMAND": {
+    "english": "Could not find command {COMMAND}!",
+    "german": "Konnte den Befehl {COMMAND} nicht finden!"
+  },
+  "CURRENT_PREFIX": {
+    "english": "The current prefix is {PREFIX}.",
+    "german": "Der aktuelle Prefix ist {PREFIX}."
+  },
+  "SET_PREFIX": {
+    "english": "Set the command prefix to {PREFIX}.",
+    "german": "Der Prefix {PREFIX} wurde festgelegt."
+  },
+  "CANNOT_SET_PREFIX_IN_DMS": {
+    "english": "You cannot set a prefix in a private message.",
+    "german": "Du kannst den Prefix nicht in Privatnachrichten festlegen."
+  },
+  "CANNOT_CHANGE_REQUIRED_ROLES_IN_DMS": {
+    "english": "You cannot change required roles in private messages.",
+    "german": "Du kannst die benötigen Rolen nicht in Privatnachrichten festlegen."
+  },
+  "REMOVED_ALL_REQUIRED_ROLES": {
+    "english": "Removed all required roles from command {COMMAND}.",
+    "german": "Alle benötigen Rollen wurde vom Befehl {COMMAND} entfernt."
+  },
+  "ADDED_REQUIRED_ROLE": {
+    "english": "Added role {ROLE} to command {COMMAND}.",
+    "german": "Die Rolle {ROLE} wurde dem Befehl {COMMAND} hinzugefügt."
+  },
+  "SYNTAX_ERROR": {
+    "english": "Incorrect usage! Please use \"{PREFIX}{COMMAND} {ARGUMENTS}\"",
+    "german": "Falsche Verwendung! Bitte nutze \"{PREFIX}{COMMAND} {ARGUMENTS}\""
+  },
+  "NO_DATABASE_FOUND": {
+    "english": "No database connection found!",
+    "german": "Es wurde keine Verbindung zu einer Datenbank gefunden!"
+  },
+  "GUILD_ONLY_COMMAND": {
+    "english": "This command can only be used within a server.",
+    "german": "Dieser Befehl kann nur in einem Server benutzt werden."
+  },
+  "NO_REACT_PERMS": {
+    "english": "This bot needs the \"Add Reactions\" permission to use the help menu.",
+    "german": "Der Bot benötigt die Berechtigung \"Reaktionen hinzufügen\", damit das Hilfemenü genutzt werden kann."
+  },
+  "EXCEPTION": {
+    "english": "An error occurred when running this command! This error has been reported to the developers.",
+    "german": "Beim Ausführen dieses Befehls ist ein Fehler aufgetreten! Dieser Fehler wurde den Entwicklern gemeldet."
+  },
+  "NO_TAGGED_CHANNELS": {
+    "english": "Please tag at least one channel.",
+    "german": "Bitte taggen Sie mindestens einen Kanal."
+  },
+  "NOT_CHANNEL_COMMAND": {
+    "english": "That command is currently not limited to any channel.",
+    "german": "Dieser Befehl ist derzeit nicht auf einen Kanal beschränkt."
+  },
+  "NO_LONGER_CHANNEL_COMMAND": {
+    "english": "That command is no longer a channel specific command.",
+    "german": "Dieser Befehl ist kein kanalspezifischer Befehl mehr."
+  },
+  "NOW_CHANNEL_COMMAND": {
+    "english": "\"{COMMAND}\" can now only be ran in {CHANNELS}.",
+    "german": "\"{COMMAND}\" kann jetzt nur noch in {CHANNELS} ausgeführt werden."
+  },
+  "ALLOWED_CHANNELS": {
+    "english": "You can only use that command in the following: {CHANNELS}.",
+    "german": "Sie können diesen Befehl nur im Folgenden verwenden: {CHANNELS}."
+  },
+  "HELP_MENU": {
+    "TITLE": {
+      "english": "Help Menu",
+      "german": "Hilfemenü"
+    },
+    "SELECT_A_CATEGORY": {
+      "english": "Please select a command category by clicking it's reaction.",
+      "german": "Bitte wähle eine Befehlskategorie aus, indem du auf eine Reaktion klickst."
+    },
+    "COMMANDS": {
+      "english": "commands",
+      "german": "Befehle"
+    },
+    "DESCRIPTION_FIRST_LINE": {
+      "english": "Use 🚪 to return to the previous menu.",
+      "german": "Benutze 🚪, um zum vorherigen Menü zurückzukehren."
+    },
+    "DESCRIPTION_SECOND_LINE": {
+      "english": "Use ⬅ and ➡ to navigate between pages.",
+      "german": "Benutze ⬅ und ➡, um zwischen den Seiten hin und her zu wechseln."
+    },
+    "ALIASES": {
+      "english": "Aliases",
+      "german": "Aliase"
+    },
+    "SYNTAX": {
+      "english": "Syntax",
+      "german": "Syntax"
+    }
+  }
+}
