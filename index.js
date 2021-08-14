@@ -22,6 +22,9 @@ client.on('ready', () => {
             useUnifiedTopology: true,
             useFindAndModify: false,
         },
+
+        testServers: ['875641961321758740'],
+
         disabledDefaultCommands: [
             // 'help',
             // 'command',
@@ -30,10 +33,11 @@ client.on('ready', () => {
             // 'requiredrole'
         ]
     })
+
         .setDefaultPrefix('$')
         .setColor(0xff0000)
         .setMongoPath('mongodb+srv://admin:florian2605@cluster0.kdkwn.mongodb.net/infinitycode?retryWrites=true&w=majority')
-
+        .setBotOwner('775741196206473226')
     console.log('Der Bot wurde gestartet.')
 })
 
