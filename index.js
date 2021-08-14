@@ -6,7 +6,6 @@ const client = new DiscordJS.Client({
 })
 
 client.on('ready', () => {
-
     new WOKCommands(client, {
         commandsDir: 'commands',
         featuresDir: 'events',
