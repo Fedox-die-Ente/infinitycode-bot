@@ -14,13 +14,10 @@ module.exports = {
             .setColor(embed.maincolor)
             .setFooter(embed.footer)
             .setDescription('» Der Prefix von Bot ist $')
-            .addFields({
-                    name: `${emoji.owner} Owner - (0)`,
-                    value: `\`Keine Befehle erkannt\``
-                },
+            .addFields(
                 {
                     name: `${emoji.staff} Staff - (0)`,
-                    value: `\`Keine Befehle erkannt\``
+                    value: `\`sendrules\``
                 },
                 {
                     name: `${emoji.admin2} Administration - (0)`,
