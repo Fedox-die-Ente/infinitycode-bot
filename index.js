@@ -2,10 +2,11 @@ const DiscordJS = require('discord.js')
 const WOKCommands = require('wokcommands')
 require('dotenv').config()
 
-
 const client = new DiscordJS.Client({
     partials: ['MESSAGE', 'REACTION']
 })
+require('discord-buttons')(client)
+
 
 client.on('ready', () => {
     new WOKCommands(client, {
