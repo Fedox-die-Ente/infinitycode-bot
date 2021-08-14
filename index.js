@@ -10,10 +10,10 @@ client.on('ready', () => {
     new WOKCommands(client, {
         commandsDir: 'commands',
         featuresDir: 'events',
-        messagesPath: '',
+        messagesPath: 'messages.json',
         showWarns: true,
         del: -1,
-        defaultLangauge: "english",
+        defaultLangauge: "german",
         ignoreBots: false,
         dbOptions: {
             keepAlive: true,
@@ -31,7 +31,9 @@ client.on('ready', () => {
     })
         .setDefaultPrefix('$')
         .setColor(0xff0000)
-        .setMongoPath('Your path here')
+        .setMongoPath('mongodb+srv://admin:florian2605@cluster0.kdkwn.mongodb.net/infinitycode?retryWrites=true&w=majority')
+
+    console.log('Der Bot wurde gestartet.')
 })
 
-client.login("YOUR TOKEN HERE")
+client.login("ODMyMzIxNjQ3ODcxNjU1OTQ2.YHiF8A.yCC3mEHoelnIPiNAhUc7M4zL3PQ")
