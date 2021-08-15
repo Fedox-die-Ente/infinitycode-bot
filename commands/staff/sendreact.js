@@ -11,7 +11,8 @@ module.exports = {
     ownerOnly: false,
     cooldown: '2s',
     callback: ({message, args}) => {
-        if (message.channel.id === '875667747806257172') {
+        if (message.channel.id === '875650592234676264') {
+            message.delete()
             const react = new Discord.MessageEmbed()
                 .setColor(embed.maincolor)
                 .setAuthor(`${embed.name}`, `${embed.logo}`)
@@ -30,11 +31,50 @@ module.exports = {
                 .addComponents([seecoding, notseecoding]);
 
             message.channel.send({components: addrow, embed: react})
-        } else if (message.channel.id === '875667650678771762') {
-            message.reply('Falscher Channel')
-        }
+        } else if (message.channel.id === '875652901589102603') {
+            message.delete()
+            const react2 = new Discord.MessageEmbed()
+                .setColor(embed.maincolor)
+                .setAuthor(`${embed.name}`, `${embed.logo}`)
+                .setDescription('Klicke unten auf die Knöpfe um die verschiedenen Rollen zu bekommen.')
+                .setFooter(`${embed.footer}`)
+            //ADD
+            const allnotes_ = new disbut.MessageButton()
+                .setStyle('green')
+                .setLabel('[+] » Alle Benachrichtigungen')
+                .setID('allenotes+');
+            const wichtigenotes_ = new disbut.MessageButton()
+                .setStyle('green')
+                .setLabel('[+] » Wichtige Benachrichtigungen')
+                .setID('wichtigenotes+');
+            const uploadnotes_ = new disbut.MessageButton()
+                .setStyle('green')
+                .setLabel('[+] » Upload Benachrichtigungen')
+                .setID('uploadnotes+');
 
-        //message.reply(message.channel.id)
+            //REMOVE
+            const allnotes = new disbut.MessageButton()
+                .setStyle('red')
+                .setLabel('[-] » Alle Benachrichtigungen')
+                .setID('allenotes-');
+            const wichtigenotes = new disbut.MessageButton()
+                .setStyle('red')
+                .setLabel('[-] » Wichtige Benachrichtigungen')
+                .setID('wichtigenotes-');
+            const uploadnotes = new disbut.MessageButton()
+                .setStyle('red')
+                .setLabel('[-] » Upload Benachrichtigungen')
+                .setID('uploadnotes-');
+
+            const addrow = new disbut.MessageActionRow()
+                .addComponents([allnotes_, wichtigenotes_, uploadnotes_]);
+            const deleterow = new disbut.MessageActionRow()
+                .addComponents([allnotes, wichtigenotes, uploadnotes]);
+
+            message.channel.send({components: [addrow, deleterow], embed: react2})
+
+            //message.reply(message.channel.id)
+        }
     }
 }
 
