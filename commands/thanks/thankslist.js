@@ -8,7 +8,7 @@ const disbut = require("discord-buttons");
 module.exports = {
     category: 'thanks',
     aliases: 'dankeliste',
-    description: 'Danke jemanden',
+    description: 'Thanks List',
     ownerOnly: false,
     cooldown: '2s',
     callback: async ({message, args}) => {
@@ -19,7 +19,7 @@ module.exports = {
                     .setAuthor(`${embed.name}`, `${embed.logo}`)
                     .setFooter(`${embed.footer}`)
                     .setColor(`${embed.maincolor}`)
-                    .setDescription(`${emoji.error} | Bitte makiere jemanden.`)
+                    .setDescription(`${emoji.error} | Bitte makiere einen User.`)
                 message.reply(error1)
                 return
             }
