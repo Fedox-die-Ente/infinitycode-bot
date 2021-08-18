@@ -2,9 +2,11 @@
   "name": "infinitycode",
   "version": "1.0.0",
   "dependencies": {
+    "@hk223/srcshare.io": "0.0.12",
     "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "mongoose": "^5.13.7",
+    "sourcebin": "^4.2.5",
     "wokcommands": "^1.3.6"
   },
   "devDependencies": {
