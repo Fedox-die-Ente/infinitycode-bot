@@ -7,6 +7,7 @@ const {fetchSuggestionChannels} = require('../../events/suggestion')
 
 module.exports = {
     category: 'User',
+    requiredRoles: '875685542434603059',
     aliases: 'h',
     description: 'Hilfe Menü',
     ownerOnly: false,

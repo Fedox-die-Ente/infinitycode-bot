@@ -7,6 +7,7 @@ const disbut = require("discord-buttons");
 module.exports = {
     category: 'staff',
     aliases: 'h',
+    requiredRoles: '875685542434603059',
     description: 'Sende eine Wiki',
     ownerOnly: false,
     cooldown: '2s',

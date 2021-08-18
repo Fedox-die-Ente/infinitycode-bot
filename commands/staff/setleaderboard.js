@@ -7,6 +7,7 @@ const disbut = require("discord-buttons");
 
 module.exports = {
     category: 'thanks',
+    requiredRoles: '875685542434603059',
     aliases: 'dankeliste',
     description: 'Danke jemanden',
     ownerOnly: false,

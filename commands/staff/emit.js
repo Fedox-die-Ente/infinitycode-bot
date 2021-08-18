@@ -7,6 +7,7 @@ module.exports = {
     aliases: 'h',
     description: 'Hilfe Menü',
     ownerOnly: false,
+    requiredRoles: '875685542434603059',
     cooldown: '2s',
     callback: ({message, args, client}) => {
         if (args[0] === 'join') {
