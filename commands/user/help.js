@@ -16,8 +16,8 @@ module.exports = {
             .setDescription('» Der Prefix von Bot ist $')
             .addFields(
                 {
-                    name: `${emoji.staff} Staff - (4)`,
-                    value: `\`sendrules, sendreact, sendrules, setleaderboard\``
+                    name: `${emoji.staff} Staff - (5)`,
+                    value: `\`sendrules, sendreact, sendrules, setleaderboard, setsuggestion, suggestion\``
                 },
                 {
                     name: `${emoji.moderation} Moderation - (0)`,
@@ -28,7 +28,7 @@ module.exports = {
                     value: `\`Keine Befehle erkannt\``
                 },
                 {
-                    name: `${emoji.misc} Misc - (2)`,
+                    name: `${emoji.misc} Misc - (3)`,
                     value: `\`danke, dankeliste\``
                 },
                 {
