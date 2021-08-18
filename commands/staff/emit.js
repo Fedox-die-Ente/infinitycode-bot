@@ -27,5 +27,8 @@ module.exports = {
                 .setDescription(`${emoji.done} | Es wurde ein Boost emitiert.`)
             message.reply(done)
         }
+        if (args[0] === 'bump') {
+            message.channel.send('!d help')
+        }
     }
 }
