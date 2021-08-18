@@ -13,37 +13,35 @@ function getCodeBlock(txt) {
 
 module.exports = (client, instance) => {
     client.on('message', async (message) => {
-        if (message.channel.id === '875667747806257172') {
-            //console.log('Message')
-            const args = message.content.trim().split(/ +/g);
-            const command = args[0].slice(config.prefix.length).toLowerCase(); // case INsensitive, without prefix
-            const {guild} = message
-            const argsjoin = args.join(" ")
-            const text = getCodeBlock(`${argsjoin}`)
-            //console.log(text)
-            if (!text.lang) {
-                return
-            } else if (text.lang) {
-                message.delete()
-                const bin = await sourcebin.create(
-                    [
-                        {
-                            content: `${text.code}`,
-                            language: 'Text',
-                        },
-                    ],
+        //console.log('Message')
+        const args = message.content.trim().split(/ +/g);
+        const command = args[0].slice(config.prefix.length).toLowerCase(); // case INsensitive, without prefix
+        const {guild} = message
+        const argsjoin = args.join(" ")
+        const text = getCodeBlock(`${argsjoin}`)
+        //console.log(text)
+        if (!text.lang) {
+            return
+        } else if (text.lang) {
+            message.delete()
+            const bin = await sourcebin.create(
+                [
                     {
-                        title: `Code von ${message.author.username}`,
-                        description: 'Generiert von InfinityCode Bot',
+                        content: `${text.code}`,
+                        language: 'Text',
                     },
-                );
-                let done = new Discord.MessageEmbed()
-                    .setAuthor(`${embed.name}`, `${embed.logo}`)
-                    .setFooter(`${embed.footer}`)
-                    .setColor(`${embed.maincolor}`)
-                    .setDescription(`${emoji.done} | Dein Code wurde auf Sourcebin hochgeladen, bitte lade ihn nächste mal selber hoch! ${bin.url}`)
-                message.channel.send(done)
-            }
+                ],
+                {
+                    title: `Code von ${message.author.username}`,
+                    description: 'Generiert von InfinityCode Bot',
+                },
+            );
+            let done = new Discord.MessageEmbed()
+                .setAuthor(`${embed.name}`, `${embed.logo}`)
+                .setFooter(`${embed.footer}`)
+                .setColor(`${embed.maincolor}`)
+                .setDescription(`${emoji.done} | Dein Code wurde auf Sourcebin hochgeladen, bitte lade ihn nächste mal selber hoch! ${bin.url}`)
+            message.channel.send(done)
         }
     })
 }
